@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Untitled Document</title>
+</head>
+
+<body>
+
+<!--<div id="level">
+<p>"Choose A Level",</p>
+<form class="options">
+        <input type="radio" name="answer" value="true" onclick="getLevel('easy')" >Easy<br>
+        <input type="radio" name="answer" value="true" onclick="getLevel('medium')" >Medium<br>
+        <input type="radio" name="answer" value="true" onclick="getLevel('hard')" >Hard<br>
+        <input type="radio" name="answer" value="true" onclick="getLevel('expert')" >Expert</br>
+    </form>
+</div>-->
+<div id="alert"></div>
+<div id="navbar"><a class="one">Scores</a> | <a href="#" onclick="playAgain()">Play Again</a></div>
+<div id="wrap1">
+    <!--<img src="mainpic.png" id="main" />-->
+    <div id="wrap">
+
+        <div id="top">
+        <div id="countdown"></div>
+        <div id="score"></div>
+        <div id="lives"></div>
+        </div>
+
+<!--        <div class="questions">
+            <p>Drag And Drop?</p>
+            <div id="draggable" class="ui-widget-content" >Mr Pitt</div>
+            <div class="droppable" class="ui-widget-header">
+                <p id="catch"> Elaine</p>
+
+
+            </div>
+        </div> -->
+        <div class="questions">
+            <p>Whos alias is Art VandeLay,</p>
+            <div class="options">
+                <img src="elaine.png" onclick="getAnswer('false')"   />
+                <img src="george.jpg" onclick="getAnswer('true')"  />
+                <img src="jerry.jpg" onclick="getAnswer('false')"  />
+                <img src="kramer.jpeg" onclick="getAnswer('false')"  />
+            </div>
+        </div>
+
+        <div class="questions">
+            <p>"What is Kramer's first name?",</p>
+            <form class="options">
+                <p class="qu" onclick="getAnswer('false')" >Koman</p>
+                <p class="qu" onclick="getAnswer('true')" >Cosmo</p>
+                <p class="qu" onclick="getAnswer('false')" >Kosmon</p>
+                <p class="qu" onclick="getAnswer('false')" >Cosmin</p>
+            </form>
+        </div>
+
+        <div class="questions">
+            <p>Of what profession does George not pretend to be associaed with?</p>
+            <form class="options">
+                <p class="qu" onclick="getAnswer('false')" >Architect</p>
+                <p class="qu" onclick="getAnswer('false')" >Marine Biologist</p>
+                <p class="qu" onclick="getAnswer('false')" >Salesman for a fake latex company</p>
+                <p class="qu" onclick="getAnswer('true')" >Engineer</p>
+            </form>
+        </div>
+
+        <div class="questions">
+            <p>Who describes Kramer as a hipster doofus?,</p>
+            <div class="options">
+                <img src="elaine.png" onclick="getAnswer('true')"   />
+                <img src="george.jpg" onclick="getAnswer('false')"  />
+                <img src="jerry.jpg" onclick="getAnswer('false')"  />
+                <img src="kramer.jpeg" onclick="getAnswer('false')"  />
+            </div>
+        </div>
+
+        <div class="questions">
+            <p>What is Kramer really afraid of?</p>
+            <form class="options">
+                <p class="qu" onclick="getAnswer('false')" >Frankenstein</p>
+                <p class="qu" onclick="getAnswer('false')" >Bears</p>
+                <p class="qu" onclick="getAnswer('false')" >Dogs</p>
+                <p class="qu" onclick="getAnswer('true')" >Clowns</p>
+            </form>
+        </div>
+
+        <div class="questions">
+            <p>Whos alias is Professor H. E. Pennypacker?</p>
+            <div class="options">
+                <img src="elaine.png" onclick="getAnswer('false')"   />
+                <img src="george.jpg" onclick="getAnswer('false')"  />
+                <img src="jerry.jpg" onclick="getAnswer('false')"  />
+                <img src="kramer.jpeg" onclick="getAnswer('true')"  />
+            </div>
+        </div>
+
+        <div class="questions">
+            <p>Which was not a business idea of Kramers.</p>
+            <form class="options">
+                <p class="qu" onclick="getAnswer('false')" >Pizza Place Where You Make Your Own Pie</p>
+                <p class="qu" onclick="getAnswer('false')" >Disposable Ties</p>
+                <p class="qu" onclick="getAnswer('false')" >Beach Perfume</p>
+                <p class="qu"onclick="getAnswer('true')" >Bobble Head Pez Dispensers</p>
+            </form>
+        </div>
+
+        <div class="questions">
+            <p>What is the name of the alternate diner?</p>
+            <form class="options">
+                <p class="qu" onclick="getAnswer('true')" >Reggies</p>
+                <p class="qu" onclick="getAnswer('false')" >Monks</p>
+                <p class="qu" onclick="getAnswer('false')" >Tony's</p>
+                <p class="qu" onclick="getAnswer('false')" >Central Perk</p>
+            </form>
+        </div>
+
+        <div class="questions">
+            <p>Whos alias is Professor Peter van Nostrand?</p>
+            <div class="options">
+                <img src="elaine.png" onclick="getAnswer('false')"   />
+                <img src="george.jpg" onclick="getAnswer('false')"  />
+                <img src="jerry.jpg" onclick="getAnswer('false')"  />
+                <img src="kramer.jpeg" onclick="getAnswer('true')"  />
+            </div>
+        </div>
+
+        <div class="questions">
+            <p>Name the soup George orders first from the soup Nazi?</p>
+            <form class="options">
+                <p class="qu" onclick="getAnswer('true')" >Crab Bisque</p>
+                <p class="qu" onclick="getAnswer('false')" >Mulagatawnny</p>
+                <p class="qu" onclick="getAnswer('false')" >Minstrone</p>
+                <p class="qu" onclick="getAnswer('false')" >Potato & Leek</p>
+            </form>
+        </div>
+
+        <div class="questions">
+            <p>What does George try to sneak into Susan's parents house by using a fishing line?</p>
+            <form class="options">
+                <p class="qu" onclick="getAnswer('true')" >Marble Rye</p>
+                <p class="qu" onclick="getAnswer('false')" >Carmel Cake</p>
+                <p class="qu" onclick="getAnswer('false')" >Chocolate Bobka</p>
+                <p class="qu" onclick="getAnswer('false')" >Cinammon Bobka</p>
+            </form>
+        </div>
+
+        <div class="questions">
+            <p>What is Elaine's first assignment when she goes to work with Mr. Pipp?</p>
+            <form class="options">
+                <p class="qu" onclick="getAnswer('true')" >Buying Him socks</p>
+                <p class="qu" onclick="getAnswer('false')" >Booking Holidays</p>
+                <p class="qu" onclick="getAnswer('false')" >Cutting A Snickers</p>
+                <p class="qu" onclick="getAnswer('false')" >Ringing A Phone In</p>
+            </form>
+        </div>
+
+        <div class="questions">
+            <p>What TV set does Kramer assemble in his living room?</p>
+            <form class="options">
+                <p class="qu" onclick="getAnswer('true')" >The Merv Griffin show</p>
+                <p class="qu" onclick="getAnswer('false')" >Reggis Kelly</p>
+                <p class="qu" onclick="getAnswer('false')" >Conan O Brien</p>
+                <p class="qu" onclick="getAnswer('false')" >Jay Leno</p>
+            </form>
+        </div>
+
+    </div>
+    <div id="scores"></div>
+</div>
+
+
+<!--<button id="next" type="button">Next Question</button>-->
+<img src="logo.fw.png" id="logo"/>
+<script src="jquery-1.9.1.min.js"></script>
+<script src="jquery-shuffle.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script src="script.js"></script>
+<script src="imageChanger.js"></script>
+
+</body>
+</html>

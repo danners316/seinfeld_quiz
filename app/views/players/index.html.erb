@@ -1,0 +1,14 @@
+<div id="score_chart">
+<table>
+<% @players.each do |player| %>
+  <tr>
+    <td><%= player.name %></td>
+    <td><%= player.score %></td>
+    <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+    </table>
+
+</div>
+
+
